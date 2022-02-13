@@ -22,3 +22,14 @@
   font-size: 1.2rem;
   margin: 0 1rem;
 }
+@media screen and (max-width: 462px) {
+  .navbar {
+    padding: 1.5rem 2rem;
+  }
+  .navbar > h1 {
+    font-size: 2.3rem;
+  }
+  .icons > img {
+    max-width: 3rem;
+  }
+}

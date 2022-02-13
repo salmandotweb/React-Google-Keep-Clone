@@ -35,6 +35,13 @@ function CreateNote({ passData }) {
     }
   };
 
+  const handleSubmit = (e) => {
+    if (e.key === "Enter" && !e.shiftKey) {
+      e.preventDefault();
+      handleData(e);
+    }
+  };
+
   return (
     <form className={classes.form}>
       {show && (
@@ -50,12 +57,13 @@ function CreateNote({ passData }) {
         name="content"
         id=""
         cols="20"
-        rows="7"
+        rows="3"
         typeof="submit"
-        placeholder="Note..."
+        placeholder="Take a note..."
         value={note.content}
         onClick={showTitle}
         onChange={handleInputs}
+        onKeyPress={handleSubmit}
       ></textarea>
 
       <button type="submit" onClick={handleData} className={classes.addbtn}>

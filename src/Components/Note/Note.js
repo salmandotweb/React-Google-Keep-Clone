@@ -4,6 +4,7 @@ import classes from "./Note.module.css";
 
 const Note = ({ id, title, content, deleteItem }) => {
   const deleteNote = () => {
+    alert("Do you really want to delete this note?");
     deleteItem(id);
   };
   return (

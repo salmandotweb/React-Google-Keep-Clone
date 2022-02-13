@@ -1,6 +1,6 @@
 .form {
   background: #fff;
-  max-width: 45rem;
+  max-width: 55rem;
   margin: 2rem auto;
   display: flex;
   flex-direction: column;
@@ -17,6 +17,7 @@
   border: none;
   resize: none;
   font-weight: 600;
+  font-size: 1.5rem;
 }
 .form > input::placeholder,
 .form > textarea::placeholder {
@@ -27,14 +28,14 @@
   align-items: center;
   justify-content: center;
   position: absolute;
-  bottom: -2rem;
-  right: 2rem;
+  bottom: -1.5rem;
+  right: 5%;
   background: #202124;
   border: none;
   padding: 1rem;
   font-size: 1.7rem;
-  height: 4.5rem;
-  width: 4.5rem;
+  height: 3.5rem;
+  width: 3.5rem;
   border-radius: 50%;
   font-weight: 600;
   cursor: pointer;
@@ -46,4 +47,10 @@
 }
 .addbtn > svg {
   color: #fff;
+}
+
+@media screen and (max-width: 644px) {
+  .form {
+    max-width: 90%;
+  }
 }
