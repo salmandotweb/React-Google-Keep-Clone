@@ -1,0 +1,24 @@
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.5rem 5rem;
+  border-bottom: 0.05rem solid #5f6368;
+}
+.navbar > h1 {
+  font-size: 3rem;
+  font-weight: 500;
+  color: #e2e2e3;
+}
+.icons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.icons > img {
+  max-width: 4rem;
+}
+.icons > span {
+  font-size: 1.2rem;
+  margin: 0 1rem;
+}
